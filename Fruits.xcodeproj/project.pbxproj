@@ -14,6 +14,7 @@
 		AB5D81B329E6D8360070A495 /* FruitNutrientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D81B229E6D8360070A495 /* FruitNutrientsView.swift */; };
 		AB5D81B529E83A710070A495 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D81B429E83A710070A495 /* SettingsView.swift */; };
 		AB5D81B729E85EF70070A495 /* SettingsLableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D81B629E85EF70070A495 /* SettingsLableView.swift */; };
+		AB5D81B929E8649C0070A495 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5D81B829E8649C0070A495 /* SettingsRowView.swift */; };
 		ABC1FD4929DED94300A05C63 /* FruitsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC1FD4829DED94300A05C63 /* FruitsApp.swift */; };
 		ABC1FD4B29DED94300A05C63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC1FD4A29DED94300A05C63 /* ContentView.swift */; };
 		ABC1FD4D29DED94500A05C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC1FD4C29DED94500A05C63 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		AB5D81B229E6D8360070A495 /* FruitNutrientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNutrientsView.swift; sourceTree = "<group>"; };
 		AB5D81B429E83A710070A495 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		AB5D81B629E85EF70070A495 /* SettingsLableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLableView.swift; sourceTree = "<group>"; };
+		AB5D81B829E8649C0070A495 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		ABC1FD4529DED94300A05C63 /* Fruits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fruits.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC1FD4829DED94300A05C63 /* FruitsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsApp.swift; sourceTree = "<group>"; };
 		ABC1FD4A29DED94300A05C63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				AB5D81B029E6D2900070A495 /* SourceLinkView.swift */,
 				AB5D81B229E6D8360070A495 /* FruitNutrientsView.swift */,
 				AB5D81B629E85EF70070A495 /* SettingsLableView.swift */,
+				AB5D81B829E8649C0070A495 /* SettingsRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			files = (
 				ABC1FD6329DEFE6700A05C63 /* FruitData.swift in Sources */,
 				AB5D81B129E6D2900070A495 /* SourceLinkView.swift in Sources */,
+				AB5D81B929E8649C0070A495 /* SettingsRowView.swift in Sources */,
 				ABC1FD5929DEE01B00A05C63 /* FruitCardView.swift in Sources */,
 				AB5D81AB29DF0DF70070A495 /* FruitRowView.swift in Sources */,
 				AB5D81B329E6D8360070A495 /* FruitNutrientsView.swift in Sources */,
@@ -353,7 +357,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -381,7 +385,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -12,6 +12,8 @@ struct SettingsView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
+    @AppStorage("isOnboarding") var isOnboarding: Bool = false
+    
     // MARK: - BODY
     
     var body: some View {
@@ -40,8 +42,57 @@ struct SettingsView: View {
                     
                     // MARK: - SECTION 2
                     
+                    GroupBox(
+                    label: SettingsLableView(lableText: "Customization", lableImage: "paintbrush")
+                    ) {
+                        Divider().padding(.vertical, 4)
+                        Text("If you wish, you can restart the application by toggle the switch in this box. That way it starts the onboarding process and you will see the welcome screen again.")
+                            .padding(.vertical, 8)
+                            .frame(minHeight: 60)
+                            .layoutPriority(1)
+                            .font(.footnote)
+                            .multilineTextAlignment(.leading)
+                        Toggle(isOn: $isOnboarding) {
+                            if isOnboarding {
+                                Text("Restarted".uppercased())
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.green)
+                            } else {
+                                Text("Restart".uppercased())
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color.secondary)
+                            }
+                        }
+                        .padding()
+                        .background(
+                            Color(UIColor.tertiarySystemBackground)
+                                .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
+                        )
+                       
+                        
+                    }
+                    
                     //MARK: - SECTION 3
                     
+                    GroupBox(
+                        label:
+                            SettingsLableView(lableText: "Application", lableImage: "apps.iphone")
+                    ) {
+                       
+                        SettingsRowView(name: "Developer", content: "ThomasCreate")
+                        
+                        SettingsRowView(name: "Designer", content: "ThomasCreate")
+                       
+                        SettingsRowView(name: "Compability", content: "iOS 16.4")
+                       
+                        SettingsRowView(name: "ThomasCreate", linkLable: "ThomasCreate", linkDestination: "klotterplanket.net")
+                        
+                        SettingsRowView(name: "SwiftUI", content: "2.0")
+                       
+                        SettingsRowView(name: "Version", content: "1.1.0")
+                       
+                        
+                    }//: BOX
                     
                 }//: VSTACK
                 .navigationBarTitle(Text("Settings"), displayMode: .large)

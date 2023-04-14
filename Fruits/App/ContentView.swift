@@ -39,6 +39,7 @@ struct ContentView: View {
             )
         }//: NAVIGATION
         .padding()
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 // PREVIEW
